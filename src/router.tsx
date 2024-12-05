@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, ScrollRestoration } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
 import { PricingPage } from './pages/pricing';
@@ -16,7 +16,12 @@ import { PlatformTour } from './pages/PlatformTour';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: (
+      <>
+        <Layout />
+        <ScrollRestoration />
+      </>
+    ),
     children: [
       {
         index: true,
