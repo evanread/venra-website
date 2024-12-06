@@ -13,6 +13,11 @@ const industries = [
   { label: 'Cleaning', href: '/industries/cleaning' },
 ];
 
+const resources = [
+  { label: 'Blog', href: '/blog' },
+  { label: 'Platform Tour', href: '/platform-tour' },
+];
+
 export function Nav() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,7 +25,7 @@ export function Nav() {
     <nav className="relative">
       <div className="container mx-auto px-4 sm:px-8 py-4 max-w-7xl">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-12">
+          <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center gap-2">
               <Zap className="w-8 h-8 text-white" />
               <span className="text-2xl font-bold text-white">
@@ -32,15 +37,11 @@ export function Nav() {
               <Link to="/pricing" className="text-white/90 hover:text-white">
                 Pricing
               </Link>
+              <Dropdown label="Resources" items={resources} />
             </div>
           </div>
           
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/platform-tour">
-              <Button variant="outline" size="sm">
-                Tour the Platform
-              </Button>
-            </Link>
             <Button variant="secondary" size="sm" isGetStarted>
               Get Started Now
             </Button>
@@ -78,14 +79,20 @@ export function Nav() {
               >
                 Pricing
               </Link>
-              <div className="pt-2 space-y-2">
-                <Link
-                  to="/platform-tour"
-                  className="block px-4 py-2 text-center text-white border border-white/30 rounded-lg hover:bg-white/10"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Tour the Platform
-                </Link>
+              <div className="space-y-2">
+                <p className="text-white/90 text-sm font-semibold px-4">Resources</p>
+                {resources.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block px-4 py-2 text-white/90 hover:text-white hover:bg-blue-800 rounded-lg"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              <div className="pt-2">
                 <Button
                   variant="secondary"
                   size="sm"

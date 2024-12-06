@@ -2,6 +2,8 @@ import { createBrowserRouter, ScrollRestoration } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
 import { PricingPage } from './pages/pricing';
+import { BlogPage } from './pages/blog/BlogPage';
+import { BlogPostPage } from './pages/blog/BlogPostPage';
 import { HVACPage } from './pages/industries/hvac/HVACPage';
 import { PlumbingPage } from './pages/industries/plumbing/PlumbingPage';
 import { ElectricianPage } from './pages/industries/electrician/ElectricianPage';
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
       {
         path: 'pricing',
         element: <PricingPage />,
+      },
+      {
+        path: 'blog',
+        element: <BlogPage />,
+      },
+      {
+        path: 'blog/:slug',
+        element: <BlogPostPage />,
       },
       {
         path: 'platform-tour',
