@@ -1,7 +1,6 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, Shield, HelpCircle } from 'lucide-react';
 import { Button } from '../ui/Button';
-import { StarRating } from '../StarRating';
 
 const features = [
   'Unlimited ad campaigns',
@@ -10,6 +9,21 @@ const features = [
   'Access to proven ad templates',
   'AI-powered follow-ups for leads',
   'Real-time analytics dashboard',
+];
+
+const faqs = [
+  {
+    question: 'Is ad budget included in the subscription price?',
+    answer: 'No. Your subscription covers the Venra platform and tools. Your ad spend on platforms like Google or Facebook is separate and managed by you.'
+  },
+  {
+    question: 'Can I cancel at any time?',
+    answer: 'Yes, we make it easy to cancel within the app.'
+  },
+  {
+    question: 'Are there any long term contracts?',
+    answer: 'No, it\'s month to month. You\'re never locked into a long-term commitment.'
+  }
 ];
 
 export function PricingTable() {
@@ -43,7 +57,7 @@ export function PricingTable() {
             </Button>
           </div>
 
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-lg mx-auto mb-8">
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
@@ -54,13 +68,24 @@ export function PricingTable() {
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-gray-100 text-center">
-            <div className="flex justify-center">
-              <StarRating variant="dark" size="sm" />
+          <div className="flex items-center justify-center gap-2 py-4 px-6 bg-blue-50 rounded-xl mb-8">
+            <Shield className="w-5 h-5 text-blue-600" />
+            <span className="font-medium">30-day money-back guarantee</span>
+          </div>
+
+          <div className="border-t border-gray-200 pt-8">
+            <h3 className="text-lg font-semibold mb-6 flex items-center gap-2 justify-center">
+              <HelpCircle className="w-5 h-5 text-blue-600" />
+              Frequently Asked Questions
+            </h3>
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <div key={index} className="text-left">
+                  <h4 className="font-medium mb-2">{faq.question}</h4>
+                  <p className="text-gray-600">{faq.answer}</p>
+                </div>
+              ))}
             </div>
-            <p className="text-sm text-center text-gray-600 mt-4">
-              30-day money-back guarantee
-            </p>
           </div>
         </div>
       </div>
