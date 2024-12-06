@@ -1,21 +1,21 @@
 import React from 'react';
-import { Tag, Star, MessageCircle } from 'lucide-react';
+import { Tag, Star, MessageCircle, DollarSign } from 'lucide-react';
 
 const benefits = [
   {
-    icon: Tag,
-    title: 'Exclusive Pricing',
-    description: 'Get unlimited access for just $49/month—this price won\'t last.'
+    icon: DollarSign,
+    title: '75% Discount',
+    description: 'Get started at $49/month instead of $197/month during beta'
   },
   {
     icon: Star,
     title: 'Priority Access',
-    description: 'Be the first to experience Venra\'s powerful marketing tools.'
+    description: 'Be the first to experience Venra\'s powerful marketing tools'
   },
   {
     icon: MessageCircle,
     title: 'Your Voice Matters',
-    description: 'Help shape Venra by sharing feedback as we refine the platform.'
+    description: 'Help shape Venra by sharing feedback as we refine the platform'
   }
 ];
 
