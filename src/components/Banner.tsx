@@ -8,7 +8,7 @@ export function Banner() {
         <Sparkles className="w-5 h-5" />
         <p className="font-medium">
           <span className="font-bold">Launch Your First HVAC Campaign:</span>
-          {" "}First 20 Companies Get 50% Off + Free Setup
+          {" "}First 20 Companies Get 75% Off + Free Setup
         </p>
       </div>
     </div>
