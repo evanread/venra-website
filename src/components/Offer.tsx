@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import { StarRating } from './StarRating';
+import { TrustMessage } from './TrustMessage';
 import { Button } from './ui/Button';
 
 const valueStack = [
@@ -45,7 +45,7 @@ export function Offer() {
                 Get Started Now
               </Button>
               <div className="flex justify-center">
-                <StarRating variant="dark" size="sm" />
+                <TrustMessage variant="dark" size="sm" />
               </div>
             </div>
           </div>

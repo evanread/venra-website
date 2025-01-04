@@ -10,10 +10,10 @@ export function CallOut() {
           <div className="max-w-3xl mx-auto text-center">
             <Shield className="w-16 h-16 mx-auto mb-6 text-blue-400" />
             <h2 className="text-3xl font-bold mb-6">
-              For Home Service Businesses Ready to Take Control
+              Start Growing Your HVAC Business Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Stop wasting money on agencies or spinning your wheels trying to make marketing work. Venra simplifies everything, giving you the tools to take charge of your growth.
+              From ad campaign to booked appointment - all while you focus on serving customers
             </p>
             <Button variant="secondary" size="lg" isGetStarted>
               Get Started Now

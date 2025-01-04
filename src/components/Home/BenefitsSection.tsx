@@ -5,18 +5,18 @@ import { BenefitCard } from './BenefitCard';
 const benefits = [
   {
     icon: Target,
-    title: 'No Guesswork. Real Results.',
-    description: 'Use data-driven campaigns proven to convert in your industry.',
+    title: 'Proven HVAC Templates',
+    description: 'Use data-driven campaigns proven to convert HVAC leads in your market',
   },
   {
     icon: Clock,
     title: 'Up and Running in Minutes',
-    description: 'Quick setup with templates tailored for home service businesses.',
+    description: 'Launch your first campaign and start booking appointments in under 30 minutes',
   },
   {
     icon: PiggyBank,
     title: 'Save Thousands on Agencies',
-    description: 'Cut out the middleman and take control of your marketing.',
+    description: 'Get better results at 1/4 the cost of traditional HVAC marketing agencies',
   },
 ];
 

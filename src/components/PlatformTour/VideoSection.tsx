@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/Button';
-import { StarRating } from '@/components/StarRating';
+import { TrustMessage } from '@/components/TrustMessage';
 
 export function VideoSection() {
   return (
@@ -11,7 +11,7 @@ export function VideoSection() {
           width="100%"
           height="100%"
           src="https://www.youtube.com/embed/t-C6Jt7vaQo"
-          title="See how Venra helps home service businesses grow"
+          title="See how Venra helps HVAC businesses grow"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -20,7 +20,7 @@ export function VideoSection() {
 
       <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white text-center">
         <h2 className="text-2xl font-bold mb-4">
-          Ready to start booking more jobs?
+          Ready to start booking more HVAC jobs?
         </h2>
         <p className="text-lg text-blue-100 mb-6">
           Join our beta program today and get 50% off our regular pricing
@@ -36,7 +36,7 @@ export function VideoSection() {
           </Link>
         </div>
         <div className="flex justify-center">
-          <StarRating variant="light" size="sm" />
+          <TrustMessage variant="light" size="sm" />
         </div>
       </div>
     </div>

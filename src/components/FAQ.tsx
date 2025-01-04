@@ -5,27 +5,27 @@ import { cn } from '@/lib/utils';
 const faqs = [
   {
     question: "How quickly can I get started with Venra?",
-    answer: "You can launch your first campaign in under 15 minutes. Our templates are pre-configured for home service businesses, so you just need to customize your service area and budget."
+    answer: "You can launch your first HVAC campaign in under 30 minutes. Our templates are pre-configured with proven ad copy, targeting, and landing pages specifically for HVAC services."
   },
   {
-    question: "Do I need technical knowledge to use Venra?",
-    answer: "Not at all! Venra is designed to be user-friendly for busy home service professionals. Our step-by-step setup wizard and pre-built templates handle all the technical details for you."
+    question: "What landing page templates are included?",
+    answer: "We provide optimized landing pages for AC installation, heating replacement, maintenance contracts, and emergency repairs. Each template includes appointment scheduling, trust badges, and social proof sections."
+  },
+  {
+    question: "How does the calendar integration work?",
+    answer: "Venra syncs with Google Calendar to show real-time availability. When a lead books an appointment, it's automatically added to your calendar and they receive confirmation and reminder messages."
+  },
+  {
+    question: "Can Venra work with my existing software?",
+    answer: "Yes! Venra integrates with popular HVAC business software through our API. We can sync appointments, customer data, and job status updates automatically."
   },
   {
     question: "What makes Venra different from hiring an agency?",
-    answer: "Venra gives you direct control over your marketing at a fraction of the cost. You get the same professional-grade campaigns and automation, but without the agency markup or long-term contracts."
+    answer: "Venra gives you direct control over your HVAC marketing at a fraction of the cost. You get the same professional-grade campaigns and automation, but without the agency markup or long-term contracts."
   },
   {
     question: "How does the money-back guarantee work?",
-    answer: "If you don't generate any leads in your first 30 days, we'll refund your subscription—no questions asked. We're confident in our platform's ability to deliver results for your business."
-  },
-  {
-    question: "Can I pause my campaigns at any time?",
-    answer: "Absolutely! You have full control to pause, adjust, or restart your campaigns at any time through our dashboard. This flexibility helps you manage your budget and adapt to seasonal demands."
-  },
-  {
-    question: "How much do the ads cost?",
-    answer: "You have complete control over your ad spend. Our platform provides smart budget recommendations based on your service area and industry, but you can adjust your budget at any time. Whether you want to start small or scale up aggressively, you can easily manage your ad spend and turn campaigns on or off as needed."
+    answer: "If you don't generate any HVAC leads in your first 30 days, we'll refund your subscription—no questions asked. We're confident in our platform's ability to deliver results for your business."
   }
 ];
 

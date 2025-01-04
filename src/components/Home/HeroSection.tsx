@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { StarRating } from '../StarRating';
+import { TrustMessage } from '../TrustMessage';
 import { Button } from '../ui/Button';
 
 export function HeroSection() {
@@ -12,14 +12,14 @@ export function HeroSection() {
           <div className="space-y-6 sm:space-y-8">
             <div className="space-y-4">
               <p className="text-blue-300 font-semibold tracking-wide uppercase">
-                For Home Services Businesses
+                For Growth-Focused HVAC Companies
               </p>
               <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-                Effortlessly Launch Ad Campaigns That Book More Jobs
+                Effortlessly Launch Ad Campaigns That Book More High-Value HVAC Jobs
               </h1>
             </div>
             <p className="text-lg sm:text-xl text-blue-100">
-              Venra empowers home service businesses to run profitable ad campaigns, convert more leads, and grow their revenue with the help of AI.
+              Turn clicks into booked appointments with proven HVAC ad templates, instant scheduling, and AI-powered follow-up
             </p>
             <div className="space-y-4 sm:space-y-6">
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -32,13 +32,13 @@ export function HeroSection() {
                   </Button>
                 </Link>
               </div>
-              <StarRating variant="light" size="sm" />
+              <TrustMessage variant="light" size="sm" />
             </div>
           </div>
           <div className="relative mt-8 lg:mt-0">
             <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
-              alt="Home service professional"
+              src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80"
+              alt="HVAC professional at work"
               className="rounded-lg shadow-2xl w-full"
             />
           </div>
